@@ -1,11 +1,11 @@
 ﻿//function to hopefully make it all work
 function getInput() {
-    var assignmentValue = parseInt($("#assignmentInput").value);
-    var projectValue = parseInt($("#projectInput").value);
-    var quizzesValue = parseInt($("#quizzesInput").value);
-    var midtermValue = parseInt($("#midtermInput").value);
-    var finalValue = parseInt($("#finalInput").value);
-    var intexValue = parseInt($("#intexInput").value);
+    var assignmentValue = parseInt($("#assignmentInput").val());
+    var projectValue = parseInt($("#projectInput").val());
+    var quizzesValue = parseInt($("#quizzesInput").val());
+    var midtermValue = parseInt($("#midtermInput").val());
+    var finalValue = parseInt($("#finalInput").val());
+    var intexValue = parseInt($("#intexInput").val());
 
     var finalGrade = assignmentValue + projectValue + quizzesValue + midtermValue + finalValue + intexValue;
     var letterGrade = "";
@@ -48,7 +48,7 @@ function getInput() {
         letterGrade = "E";
     }
 
-    $("#gradeInsert").innerHTML = letterGrade;
+    $("#gradeInsert").HTML(`final grade: ${letterGrade}`);
 }
 
 
