@@ -12,6 +12,15 @@ a {
   color: #0366d6;
 }
 
+h1 {
+    font-family: Technopollas;
+    color: darkslategrey;
+}
+
+label {
+    display: inline-block;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
