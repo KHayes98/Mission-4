@@ -1,4 +1,6 @@
 ﻿//function to hopefully make it all work
+$("#submitGrade").onclick = getInput();
+
 function getInput() {
     var assignmentValue = parseInt($("#assignmentInput").val());
     var projectValue = parseInt($("#projectInput").val());
@@ -49,6 +51,8 @@ function getInput() {
     }
 
     $("#gradeInsert").HTML(`final grade: ${letterGrade}`);
+
+    alert("Function is functioning");
 }
 
 
