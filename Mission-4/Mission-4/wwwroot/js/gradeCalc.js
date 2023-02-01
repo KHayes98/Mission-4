@@ -1,4 +1,5 @@
-﻿var assignmentValue = parseInt($("#assignmentInput").value);
+﻿//variables to hold the input from the user
+var assignmentValue = parseInt($("#assignmentInput").value);
 var projectValue = parseInt($("#projectInput").value);
 var quizzesValue = parseInt($("#quizzesInput").value);
 var midtermValue = parseInt($("#midtermInput").value);
@@ -6,10 +7,12 @@ var finalValue = parseInt($("#finalInput").value);
 var intexValue = parseInt($("#intexInput").value);
 
 
+//button to submit grades and return a letter grade
 $("#submitGrade").click(function () {
-    alert("Value: " + assignmentValue)
+    $("gradeInsert").innerHtml = letterGrade;
 })
 
+//calculation to determine final percentage
 var finalGrade = $("#assignmentInput").value + $("#projectInput").value + $("#quizzesInput").value + $("#midtermInput").value + $("#finalInput").value + $("#intexInput").value;
 var letterGrade = "";
 
